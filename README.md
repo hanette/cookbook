@@ -37,16 +37,54 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## Git Commands
+## First Time Here?
 Clone the repo into a directory in your local computer:
 
 ```
 git clone [URL]
 ```
 
+Install npm
+[Install Node.js](https://nodejs.org/en): We are using version 18.15.0 LTS
+```
+$ node --version
+v18.15.0
+```
+
+Check that npm is installed:
+```
+$ npm --version
+9.5.0
+```
+
+Install Next:
+```
+npm install next
+```
+Now you can run the development server and edit the website.
+
+## Git Commands
+
 Check status of your branch:
 ```
 git status
+```
+
+Update your main branch:
+```
+git checkout main
+git pull
+```
+
+
+Make a new branch and switch to it:
+```
+git checkout -b [name of new branch]
+```
+
+Before you add your files in, you want to see what changes you made:
+```
+git diff
 ```
 
 Add the files with your new changes into a commit:
@@ -54,21 +92,26 @@ Add the files with your new changes into a commit:
 git add [files you want to add into the remote repo]
 ```
 
+Double check your changes:
+```
+git diff --cached
+```
+
 Make a commit:
 ```
 git commit
 ```
-Which will open a text file in vim so you can add a description of what changes you are making.
-To add description, you go into INSET mode by pressing:
-```
-i
-```
-To exit and save your description, you press ESC and type:
-```
-:wq
-```
+Which will open a text file so you can add a description of what changes you are making.
+
 
 Once the commit is done, you push it into your branch:
 ```
 git push origin [branch name that you are on]
+```
+
+Make a PR and allow others to review your branch.
+Once approved and merged, delete the branch.
+Delete your branch that has been merged:
+```
+git branch -D [branch]
 ```
