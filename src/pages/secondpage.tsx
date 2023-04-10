@@ -5,7 +5,7 @@ import styles from '@/styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function SecondPage() {
   return (
     <>
       <Head>
@@ -20,6 +20,23 @@ export default function Home() {
             Get started by editing&nbsp;
             <code className={styles.code}>src/pages/index.tsx</code>
           </p>
+          <div>
+            <a
+              href="secondpage.tsx"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              By{' '}
+              <Image
+                src="/vercel.svg"
+                alt="Vercel Logo"
+                className={styles.vercelLogo}
+                width={100}
+                height={24}
+                priority
+              />
+            </a>
+          </div>
         </div>
 
         <div className={styles.center}>
@@ -44,16 +61,16 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a
-            href="secondpage"
+            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Second Page <span>-&gt;</span>
+              Docs <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              food1
+              Find in-depth information about Next.js features and&nbsp;API.
             </p>
           </a>
 
